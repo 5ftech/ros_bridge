@@ -3,13 +3,10 @@ FROM ros:${DOCKER_ROS_DISTRO}
 
 RUN apt-get update
 
-RUN apt-get -y install ros-melodic-desktop-full
 RUN apt-get -y install ros-melodic-moveit-*
 RUN apt-get -y install ros-melodic-industrial-*
-RUN apt-get -y install ros-melodic-gazebo-ros-control
 RUN apt-get -y install ros-melodic-ros-control ros-melodic-ros-controllers
 RUN apt-get -y install ros-melodic-trac-ik-kinematics-plugin
-RUN apt-get -y install ros-melodic-usb-cam
 
 RUN  apt install -y ros-melodic-joint-state-publisher-gui
 RUN  apt install -y ros-melodic-robot-state-publisher
